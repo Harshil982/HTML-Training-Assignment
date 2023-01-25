@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Image-container {
+  width: 40%;
+}
+.Image-container img {
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0px 4px 31px #0000000a;
+  border: 20px solid #ffffff;
+  width: 90%;
+}
+.Login-info-container
+{
+    width: 45%;
+}
+.favicon-img {
+  width: 2.5rem;
+}
+.company-img-name {
+  display: flex;
+  align-items: center;
+}
+.company-img-name h1 {
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+.desc
+{
+    width: 85%;
+    font-size: 2rem;
+    margin: 0;
+    color: #3E3E3E;
+}
+.expert
+{
+    color: #C8242F;
+}
+.login-instr
+{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #3E3E3E;
+    margin-top: 2rem;
+}
+.login-form
+{
+    width: 80%;
+}
+.login-form input::placeholder
+{
+    color: #ADADAD;
+}
+.login-form input:focus
+{
+    outline: none;
+}
+.login-form input
+{
+    background: transparent;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid #ADADAD;
+    /* margin-top: 1.5rem; */
+}
+.password
+{
+    margin-top: 2rem;
+}
+.login-forgotpass
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-top: 1rem;
+}
+.login-forgotpass button
+{
+    background-color: #C8242F;
+    padding: 0.7rem 1rem;
+    color: white;
+    width: 7rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.login-forgotpass p
+{
+    color: #ADADAD;
+    cursor: pointer;
+}
+.register-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Responsive Satrts Here */
+@media screen and (max-width : 800px)
+{
+    .main-container
+    {
+        flex-direction: column;
+        margin-top: 3rem;
+    }    
+    .Image-container 
+    {
+        width: 80%;
+    }
+    .Login-info-container
+    {
+        width: 100%;
+        margin: auto;
+    }
+    .company-img-name
+    {
+        justify-content: center;
+    }
+    .desc
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .login-instr
+    {
+        text-align: center;
+    }
+    .login-form
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register-container
+    {
+        justify-content: center;
+    }
+    .password
+    {
+        margin-top: 0.8rem;
+    }
+}
