@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar-custom">
         <div class="company__hamburger">
             <img src="./images/menu-bar.svg" onclick="handleInOut()" style="cursor: pointer;" >
             <img src="./images/header-logo.svg" />
@@ -27,6 +27,7 @@
             <img src="./images/search-icon.svg" alt="" srcset="">
             <input type="text" placeholder="Search..">
         </div>
+        <img src="./images/notification-icon.svg" class="mobile-notification-icon" alt="" srcset="">
         <div class="notification-profile">
             <img src="./images/notification-icon.svg" alt="" srcset="">
             <div class="profile">
@@ -38,6 +39,15 @@
     </div>
     <div class="sidebar width-0" id="sidebar">
         <div class="dashboard-options">
+            <div class="search-div-mobile" >
+                <img src="./images/search-icon.svg" alt="">
+                <input type="text" placeholder="search" name="" id="">
+            </div>
+            <div class="mobile-profile">
+                <img src="./images/profile.png" alt="" srcset="">
+                <p>John Doe</p>
+                <img src="./images/downward-arrow.svg" alt="" srcset="">
+            </div>
             <div class="dash-option dash-option-active">
                 <img src="./images/dashboard-active.svg" alt="" srcset="">
                 <p>Dashboard</p>

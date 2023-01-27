@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnePage</title>
+    <link rel="stylesheet" href="./CSS/innerPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="navbar-custom">
+        <div class="company__hamburger">
+            <img src="./images/menu-bar.svg" onclick="handleInOut()" style="cursor: pointer;">
+            <img src="./images/header-logo.svg" />
+        </div>
+        <div class="Search-div">
+            <img src="./images/search-icon.svg" alt="" srcset="">
+            <input type="text" placeholder="Search..">
+        </div>
+        <img src="./images/notification-icon.svg" class="mobile-notification-icon" alt="" srcset="">
+        <div class="notification-profile">
+            <img src="./images/notification-icon.svg" alt="" srcset="">
+            <div class="profile">
+                <img src="./images/profile.png" class="profile-pic" alt="" srcset="">
+                <p>John doe</p>
+                <img src="./images/downward-arrow.svg" class="down-arrow" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="sidebar width-0" id="sidebar">
+        <div class="dashboard-options">
+            <div class="search-div-mobile">
+                <img src="./images/search-icon.svg" alt="">
+                <input type="text" placeholder="search" name="" id="">
+            </div>
+            <div class="mobile-profile">
+                <img src="./images/profile.png" alt="" srcset="">
+                <p>John Doe</p>
+                <img src="./images/downward-arrow.svg" alt="" srcset="">
+            </div>
+            <div class="dash-option">
+                <img src="./images/dashboard-default.svg" alt="" srcset="">
+                <p>Dashboard</p>
+            </div>
+            <div class="dash-option dash-option-active">
+                <img src="./images/graph-active.svg" alt="" srcset="">
+                <p>Analysis</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/inbox-default.svg" alt="" srcset="">
+                <p>Inbox</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/clock-default.svg" alt="" srcset="">
+                <p>History</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/user-default.svg" alt="" srcset="">
+                <p>Users</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/maintenance-default.svg" alt="" srcset="">
+                <p>Maintenance</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/setting-default.svg" alt="" srcset="">
+                <p>Setting</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-analysis-cont">
+        <h1>Analysis</h1>
+        <div class="form-type-data p-4 fs-5 fo bg-white">
+
+            <!-- One Column -->
+            <p class="m-0">One Column</p>
+            <input type="email" class="form-control p-2 my-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Name">
+            <select class="form-select my-2 p-2" aria-label="Default select example">
+                <option selected>Dropdown</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <textarea class="form-control my-3" id="exampleFormControlTextarea1" rows="5"
+                placeholder="Multiple Line"></textarea>
+
+            <!-- Two Column -->
+            <p class="m-0 mt-4">Two Column</p>
+            <div class="row mt-3">
+                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Name">
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Name">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <input type="password" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Password">
+                </div>
+                <div class="col-6">
+                    <select class="form-select p-2" aria-label="Default select example">
+                        <option selected>Dropdown</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script>
+    let sidebar = document.getElementById("sidebar");
+    function handleInOut() {
+        sidebar.classList.toggle("width-0")
+        sidebar.classList.toggle("sidebar-active")
+    }
+</script>
+
+</html>

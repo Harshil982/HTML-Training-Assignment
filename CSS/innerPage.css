@@ -1,11 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #fafafa !important;
   min-height: 100vh;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif !important;
   font-family: "Questrial", sans-serif;
   font-family: "Roboto", sans-serif;
+}
+p {
+  margin-block-start: 1em !important;
+  margin-block-end: 1em !important;
 }
 .sidebar {
   overflow: hidden;
@@ -91,177 +95,19 @@ body {
   width: 1.3rem;
   margin-right: 0.6rem;
 }
-.dashboard-main {
-  margin: 2rem;
-}
-.details-container {
-  display: flex;
-  justify-content: space-between;
-}
-.details {
-  width: 12%;
-  display: flex;
-  background-color: white;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 1rem;
-  border-radius: 15px;
-  color: #3e3e3e;
-}
-.details img {
-  width: 2.5rem;
-}
-.details p {
-  margin: 0;
-}
-.details p:first-child {
-  font-size: 1.4rem;
-}
-.details p:last-child {
-  font-size: 0.8rem;
-}
 .mobile-notification-icon {
   display: none;
 }
-.graphs {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-.graph-1 {
-  width: 60%;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 5px;
-}
-.graph-title-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.graph-title-bar p {
-  margin: 0;
-  font-size: 1.3rem;
-  padding-bottom: 5px;
-}
-.graph-title-bar .options {
-  width: 13rem;
-  display: flex;
-  justify-content: space-between;
-}
-.graph-title-bar .options a {
-  text-decoration: none;
-  color: #adadad;
-  padding-bottom: 5px;
-}
-.graph-title-bar .options .active-link {
-  color: #c8242f;
-  border-bottom: 2px solid #c8242f;
-}
-.graph-1 img {
-  width: 100%;
-  margin: 2rem auto 0 auto;
-}
-.graph-2 {
-  width: 30%;
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 5px;
-}
-.graph-2 img {
-  width: 60%;
-  margin-left: 20%;
-}
-.countries {
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-  margin: auto;
-  flex-wrap: wrap;
-}
-.country-name {
-  display: flex;
-  align-items: center;
-}
-.country-name p {
-  margin-left: 0.6rem;
-}
-.dot {
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
-}
-/* Invoice Table CSS */
-.invoice-container {
-  margin-top: 2rem;
-  background-color: white;
-  border-radius: 5px;
-  padding: 1.5rem;
-}
-.invoice-titlebar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.invoice-titlebar p {
-  margin: 0;
-  font-size: 1.5rem;
-}
-.invoice-titlebar a {
-  text-decoration: none;
-  color: #c8242f;
-  font-weight: 600;
-}
-.invoice-table {
-  margin-top: 2rem;
-}
-.invoice-table table {
-  width: 100%;
-  text-align: left !important;
-  color: #3e3e3e;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.invoice-table table th {
-  color: #adadad;
-  font-weight: 100;
-}
-.invoice-table th,
-.invoice-table td {
-  border-bottom: 1px solid #bababa !important;
-  padding: 15px;
-}
-.common-status {
-  margin: 0;
-  text-align: center;
-  width: fit-content;
-  padding: 8px 20px;
-  border-radius: 10px;
-}
-.paid {
-  background-color: #3cdd5f46;
-  color: #3cdd5f;
-}
-.failed {
-  background-color: #ff454551;
-  color: #ff4545;
-}
-.pending {
-  color: #bababa;
-  background-color: #bababa67;
-}
-.invoice-table tr:last-child td {
-  border: none;
-}
-.search-div-mobile
-{
+.search-div-mobile {
   display: none;
 }
-.mobile-profile
-{
+.mobile-profile {
   display: none;
 }
-
+.main-analysis-cont
+{
+    margin: 1.5rem 2rem;
+}
 @media screen and (max-width: 1240px) {
   .details-container {
     flex-wrap: wrap;
