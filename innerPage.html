@@ -127,12 +127,12 @@
                     <!-- <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name"> -->
                 </div>
                 <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-3">
-                    <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input type="password" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Password">
                 </div>
                 <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-3">
-                    <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Name" disabled>
+                    <input type="email" class="form-control p-2 dis-input" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Name" disabled>
                 </div>
             </div>
             <p class="m-0 mt-4">Four Column</p>
@@ -145,9 +145,9 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <input type="text" class="form-control is-invalid" id="validationServer03"
+                    <input type="text" class="form-control" id="validationServer03"
                         aria-describedby="validationServer03Feedback" required>
-                    <div id="validationServer03Feedback" class="invalid-feedback">
+                    <div id="validationServer03Feedback" class="feedback">
                         Enter valid Data
                     </div>
                 </div>
@@ -164,6 +164,98 @@
                     </select>
                 </div>
             </div>
+            <p class="m-0 mt-4">Other Design Elements</p>
+
+            <!-- File Upload -->
+            <p class="m-0 mt-4 fs-6">File Upload</p>
+            <input type="file" id="custom-file" class="d-none" onchange='uploadFile(this)'>
+            <div class="d-flex align-items-center mt-4" >
+                <button class="Custom-file-btn" id="custom-click"> <img src="./images/cloud-upload-icon.svg" alt=""
+                        srcset="">&nbsp;&nbsp;Upload </button>
+                <p id="file-name" class="ms-4 fs-6">No file Selected</p>
+            </div>
+
+            <p class="m-0 mt-4 fs-6">Radio Button</p>
+            <div class="p-3 d-flex">
+                <div>
+                    <input type="radio" name="Check" id="Check-1">
+                    <label for="Check-1">Option-1</label>
+                </div>
+                <div class="ms-4">
+                    <input type="radio" name="Check" id="Check-2">
+                    <label for="Check-1">Option-2</label>
+                </div>
+            </div>
+            <p class="m-0 mt-4 fs-6">Check Box</p>
+            <div class="p-3 d-flex">
+                <div>
+                    <input type="checkbox" name="Check" id="Check-1">
+                    <label for="Check-1">Option-1</label>
+                </div>
+                <div class="ms-4">
+                    <input type="checkbox" name="Check" id="Check-2">
+                    <label for="Check-1">Option-2</label>
+                </div>
+            </div>
+            <p class="m-0 mt-4 fs-6">Sanckbar</p>
+            <div class="alerts-custom m-1">
+                <div class="d-flex d-flex align-items-center border border-danger rounded mt-4">
+                    <img src="./images/error-icon.svg" class="" alt="">
+                    <p class="text-danger ms-2 fs-5">This is an error Message</p>
+                </div>
+                <div class="d-flex d-flex align-items-center border border-info rounded mt-4">
+                    <img src="./images/info-icon.svg" class="" alt="" srcset="">
+                    <p class="text-info ms-2 fs-5">This is an information Message!</p>
+                </div>
+            </div>
+            <div class="alerts-custom m-1">
+                <div class="d-flex d-flex align-items-center border border-warning rounded mt-4">
+                    <img src="./images/warning-icon.svg" class="" alt="">
+                    <p class="text-warning ms-2 fs-5">This is a Warning Message</p>
+                </div>
+                <div class="d-flex d-flex align-items-center border border-success rounded mt-4">
+                    <img src="./images/success-icon.svg" class="" alt="" srcset="">
+                    <p class="text-success ms-2 fs-5">This is a Success Message!</p>
+                </div>
+            </div>
+            <p class="m-0 mt-4 fs-6">Call To Action</p>
+            <button class="btn btn-danger mt-3 cta px-5 py-2">Primary</button>
+            <button class="btn btn-outline-danger mt-3 cta ms-2  px-5 py-2">Secondary</button>
+
+            <!-- Tab navigation -->
+            <div>
+                <div class="tab-links">
+                    <button class="tablink active-tablink" onclick="openCity(event,'tab1')">Tab 1</button>
+                    <button class="tablink" onclick="openCity(event,'tab2')">Tab 2</button>
+                    <button class="tablink" onclick="openCity(event,'tab3')">Tab 3</button>
+                </div>
+                <div id="tab1" class="w3-container w3-border tab mt-4">
+                    <h2>Tab 1</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing</p>
+                </div>
+
+                <div id="tab2" class="w3-container w3-border tab mt-4" style="display:none">
+                    <h2>Tab 2</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing</p>
+                </div>
+
+                <div id="tab3" class="w3-container w3-border tab mt-4" style="display:none">
+                    <h2>Tab 3</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -171,10 +263,33 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 <script>
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-tablink", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active-tablink";
+    }
+</script>
+<script>
     let sidebar = document.getElementById("sidebar");
+    let Filebtn = document.getElementById("custom-file");
+    let customBtn = document.getElementById("custom-click");
     function handleInOut() {
         sidebar.classList.toggle("width-0")
         sidebar.classList.toggle("sidebar-active")
+    }
+    customBtn.addEventListener("click", () => {
+        Filebtn.click()
+    })
+    function uploadFile(target) {
+        document.getElementById("file-name").innerHTML = target.files[0].name;
     }
 </script>
 
