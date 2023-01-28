@@ -7,10 +7,10 @@ body {
   font-family: "Questrial", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-/* p {
+p {
   margin-block-start: 1em !important;
   margin-block-end: 1em !important;
-} */
+}
 .sidebar {
   overflow: hidden;
   min-height: 100vh;
