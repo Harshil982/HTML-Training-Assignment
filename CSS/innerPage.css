@@ -141,7 +141,7 @@ p {
 {
   background: transparent;
   border: none;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
 }
 .active-tablink
 {
@@ -162,6 +162,10 @@ input[type="radio"],input[type="checkbox"]
   border-radius: 30px;
   color: #c8242f;
   font-weight: 500;
+}
+.second-btn
+{
+  margin-left: 1rem !important;
 }
 @media screen and (max-width: 1240px) {
   .details-container {
@@ -237,9 +241,17 @@ input[type="radio"],input[type="checkbox"]
   .details {
     width: 40%;
   }
+  .second-btn
+  {
+    margin-left: 0 !important;
+  }
 }
 @media screen and (max-width: 420px) {
   .details {
     width: 100%;
+  }
+  .second-btn
+  {
+    margin-left: 0 !important;
   }
 }
